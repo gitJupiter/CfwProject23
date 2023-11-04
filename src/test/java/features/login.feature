@@ -1,6 +1,6 @@
 Feature: Login/Sign In
 
-  @regression @dd
+  @regression @smoke
   Scenario: User able to login with valid credentials
     Given I am at Raymour Homepage
     And I Dismiss the pop up page
@@ -11,7 +11,7 @@ Feature: Login/Sign In
     When I click on Login Button
     Then I should be able to successfully login
 
-  @smoke @regression
+   @regression
   Scenario: User should not be able to login with invalid email
     Given I am at Raymour Homepage
     And I Dismiss the pop up page
@@ -22,7 +22,7 @@ Feature: Login/Sign In
     When I click on Login Button
     Then I should not be able to successfully login
 
-  @regression @smoke
+  @regression
   Scenario: User should not be able to login with invalid Password
     Given I am at Raymour Homepage
     And I Dismiss the pop up page
@@ -33,7 +33,7 @@ Feature: Login/Sign In
     When I click on Login Button
     Then I should not be able to successfully login
 
-  @smoke
+  @unit
   Scenario: User should not be able to login with invalid credentials
     Given I am at Raymour Homepage
     And I Dismiss the pop up page

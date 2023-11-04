@@ -30,7 +30,7 @@ public class SignIn extends SignUP {
 
 
 
-        //mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags=@dd
+        //mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags=@smoke
 
 
 

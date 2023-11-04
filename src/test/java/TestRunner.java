@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         //path of feature file
         features = "src/test/java/features",
         //path of step definition file
+        tags = "@Smoke",
         glue = "stepDef",
         plugin = {
                 "json:target/cucumber.json",
