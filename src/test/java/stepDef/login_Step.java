@@ -16,6 +16,21 @@ public class login_Step {
 
 
     }
+    @And("I Dismiss the pop up page")
+    public void iDismissThePopUpPage() {
+    loginPage.dismiss();
+    }
+
+    @And("I click on Account Dropdown Menu")
+    public void iClickOnAccountDropdownMenu() {
+    loginPage.dropDown();
+    }
+
+    @And("I click on Sign In Button")
+    public void iClickOnSignInButton() {
+    loginPage.SignInBtn();
+    }
+
 
     @And("I enter my valid email address")
     public void iEnterMyValidEmailAddress() {
@@ -53,3 +68,4 @@ public class login_Step {
 
     }
 }
+
