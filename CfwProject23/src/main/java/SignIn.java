@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 import java.time.Duration;
 
@@ -22,8 +23,14 @@ public class SignIn extends SignUP {
         driver.findElement(By.xpath("//button[@id='accountsignin']/span/span")).click();
 
 
+        // Assert
+        // String act = driver.findElement(By.xpath(" ")).getText(); // From Coding
+        //String exp = " "; // BA/Requirements/Mock up
+        //Assert.assertEquals(act, exp);
 
 
+
+        //mvn verify -Denv=qa -Dbrowser=chrome -Dcucumber.filter.tags=@dd
 
 
 
